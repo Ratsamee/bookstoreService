@@ -9,7 +9,7 @@ namespace bookstoreService.Data
 {
     public class UserAccess: BaseDataAccess
     {
-        public UserAccess(string connectionString):base(connectionString)
+        public UserAccess(string connectionString) :base(connectionString)
         {
         }
 
@@ -55,5 +55,7 @@ namespace bookstoreService.Data
             };
             return user;
         }
+
+        
     }
 }

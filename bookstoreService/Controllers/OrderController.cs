@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using bookstoreService.Data;
 using bookstoreService.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
@@ -11,6 +12,7 @@ using Microsoft.Extensions.Configuration;
 namespace bookstoreService.Controllers
 {
     [Route("api/[controller]")]
+    [Authorize]
     [ApiController]
     public class OrderController : BaseController
     {

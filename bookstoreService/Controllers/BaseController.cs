@@ -8,8 +8,10 @@ namespace bookstoreService.Controllers
     public class BaseController : ControllerBase
     {
         protected string ConnectionString = "";
+        protected IConfiguration _config;
         public BaseController(IConfiguration configuration)
         {
+            this._config = configuration;
             this.ConnectionString = configuration.GetConnectionString("devConnection");
         }
     }

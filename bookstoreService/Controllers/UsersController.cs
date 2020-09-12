@@ -1,5 +1,6 @@
 ﻿using bookstoreService.Data;
 using bookstoreService.Model;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Configuration;
 using System;
@@ -19,6 +20,7 @@ namespace bookstoreService.Controllers
         // GET: api/Users
         [Route("api/[controller]/signin")]
         [HttpPost]
+        [Authorize]
         public async Task<IActionResult> Get([FromBody] SignIn signIn)
         {
             if (!ModelState.IsValid)
