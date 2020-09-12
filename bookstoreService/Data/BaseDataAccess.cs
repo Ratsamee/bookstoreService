@@ -59,7 +59,7 @@ namespace bookstoreService.Data
             return parameterObject;
         }
 
-        protected int ExecuteNonQuery(string procedureName, List<SqlParameter> parameters, CommandType commandType = CommandType.StoredProcedure)
+        protected async Task<int> ExecuteNonQuery(string procedureName, List<SqlParameter> parameters, CommandType commandType = CommandType.StoredProcedure)
         {
             int returnValue = -1;
 
@@ -74,7 +74,7 @@ namespace bookstoreService.Data
                         cmd.Parameters.AddRange(parameters.ToArray());
                     }
 
-                    returnValue = cmd.ExecuteNonQuery();
+                    returnValue = await cmd.ExecuteNonQueryAsync();
                 }
             }
             catch (Exception ex)

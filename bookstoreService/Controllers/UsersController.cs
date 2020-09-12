@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace bookstoreService.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class UsersController : BaseController
     {
@@ -16,8 +16,9 @@ namespace bookstoreService.Controllers
 
         }
 
-        // GET: api/Users/5
-        [HttpGet]
+        // GET: api/Users
+        [Route("api/[controller]/signin")]
+        [HttpPost]
         public async Task<IActionResult> Get([FromBody] SignIn signIn)
         {
             if (!ModelState.IsValid)
@@ -35,6 +36,7 @@ namespace bookstoreService.Controllers
         }
 
         // POST: api/Users
+        [Route("api/[controller]")]
         [HttpPost]
         public async Task<IActionResult> AddUser([FromBody] User user)
         {
