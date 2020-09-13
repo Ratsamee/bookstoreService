@@ -62,7 +62,7 @@ namespace bookstoreService
             {
                 app.UseHsts();
             }
-
+            
             app.UseCors(MyAllowSpecificOrigins);
             app.UseHttpsRedirection();
             app.UseAuthentication();

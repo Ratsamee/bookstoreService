@@ -5,6 +5,10 @@ VisualStudioVersion = 15.0.28307.902
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "bookstoreService", "bookstoreService\bookstoreService.csproj", "{E69FA130-139F-4B7E-8EFF-2505E3A0AA78}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookStoreServiceTest", "BookStoreServiceTest\BookStoreServiceTest.csproj", "{711F5739-A4D9-4F99-BC8A-D3DD63238E7F}"
+EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{E6228C34-CEC7-418B-B98C-EA29C2E380B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{E69FA130-139F-4B7E-8EFF-2505E3A0AA78}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E69FA130-139F-4B7E-8EFF-2505E3A0AA78}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E69FA130-139F-4B7E-8EFF-2505E3A0AA78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{711F5739-A4D9-4F99-BC8A-D3DD63238E7F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{711F5739-A4D9-4F99-BC8A-D3DD63238E7F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{711F5739-A4D9-4F99-BC8A-D3DD63238E7F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{711F5739-A4D9-4F99-BC8A-D3DD63238E7F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E6228C34-CEC7-418B-B98C-EA29C2E380B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6228C34-CEC7-418B-B98C-EA29C2E380B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6228C34-CEC7-418B-B98C-EA29C2E380B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6228C34-CEC7-418B-B98C-EA29C2E380B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

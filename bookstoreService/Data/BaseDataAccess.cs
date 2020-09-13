@@ -103,7 +103,7 @@ namespace bookstoreService.Data
                     returnValue = cmd.ExecuteScalar();
                 }
             }
-            catch (Exception ex)
+            catch (Exception)
             {
                 throw;
             }
