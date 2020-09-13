@@ -1,8 +1,15 @@
-﻿namespace bookstoreService.Model
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace bookstoreService.Model
 {
     public class SignIn
     {
+        [Required]
+        [StringLength(50, ErrorMessage = "Name length can't be more than 50.")]
+        [RegularExpression(@"^[^@\s]+@[^@\s]+\.[^@\s]+$")]
         public string Email { get; set; }
+        [Required]
+        [StringLength(50, ErrorMessage = "Name length can't be more than 50.")]
         public string Password { get; set; }
     }
 
